@@ -1,5 +1,6 @@
 prefix: "&#0055ff&l⚡ &#00E5FF&lMIR-TIME &8» "
 site-link: "don.mir-time.ru"
+token-cost: 10000
 active-season: "anarchy"
 xp-per-level: 100
 max-level: 50
@@ -7,8 +8,6 @@ max-level: 50
 seasons:
   anarchy:
     display-name: "&c&l⚔ Кровавая Анархия"
-    key-name: "&c&l🗝 Ключ Пропуска: &fКровавая Анархия"
-    key-material: "TRIPWIRE_HOOK"
     quests:
       q1: {name: "&c&lПалач Арены", desc: "Убейте 5 игроков в PvP", type: "KILL_PLAYER", target: 5, xp: 150}
       q2: {name: "&#00E5FF&lВзломщик Баз", desc: "Добудьте 15 блоков обсидиана", type: "BREAK_OBSIDIAN", target: 15, xp: 120}
@@ -113,12 +112,10 @@ seasons:
       50:
         free-name: "&#00E5FF&l25 Иксов &f+ Тотем Призыва Босса"
         free-cmd: "giks give %player% 25 Iksy"
-        prem-name: "&#FFD700&l75 Иксов &f+ Кит «Бог» &f+ Полный сет артефактов"
+        prem-name: "&#FFD700&l75 Иксов &f+ Полный сет артефактов"
         prem-cmds: ["giks give %player% 75 Iksy", "mtitems give %player% vampire_blade 1", "mtitems give %player% titan_chest 1", "mtitems give %player% dragon_elytra 1"]
   abyss:
     display-name: "&#9400d3&l👁 Зов Бездны"
-    key-name: "&#9400d3&l🗝 Ключ Пропуска: &fЗов Бездны"
-    key-material: "NETHER_STAR"
     quests:
       q1: {name: "&#9400d3&lОхотник Бездны", desc: "Убейте 8 игроков в PvP", type: "KILL_PLAYER", target: 8, xp: 160}
       q2: {name: "&#00E5FF&lШахтёр Бездны", desc: "Добудьте 25 блоков обсидиана", type: "BREAK_OBSIDIAN", target: 25, xp: 130}
@@ -163,8 +160,6 @@ seasons:
 
   cyber:
     display-name: "&#00E5FF&l⚡ Неоновый Рейд"
-    key-name: "&#00E5FF&l🗝 Ключ Пропуска: &fНеоновый Рейд"
-    key-material: "AMETHYST_SHARD"
     quests:
       q1: {name: "&#00E5FF&lКибер-Гладиатор", desc: "Убейте 4 игроков в PvP", type: "KILL_PLAYER", target: 4, xp: 140}
       q2: {name: "&b&lОбсидиановый Шторм", desc: "Добудьте 10 блоков обсидиана", type: "BREAK_OBSIDIAN", target: 10, xp: 110}
