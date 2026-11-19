@@ -1,10 +1,11 @@
 name: MirTimePass
-version: '2.0.0'
+version: '2.5.0'
 main: ru.mirtime.pass.MirTimePass
 api-version: '1.21'
 softdepend:
   - PlaceholderAPI
   - GemsEconomy
+  - MirTimeItems
 commands:
   battlepass:
     description: Открыть меню Боевого Пропуска MIR-TIME
