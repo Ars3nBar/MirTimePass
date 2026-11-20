@@ -1,20 +1,15 @@
 name: MirTimePass
-version: '2.6.0'
+version: '4.0.0'
 main: ru.mirtime.pass.MirTimePass
 api-version: '1.21'
 softdepend:
   - PlaceholderAPI
-  - GemsEconomy
   - PlayerPoints
+  - GemsEconomy
   - MirTimeItems
 commands:
-  battlepass:
-    description: Открыть меню Боевого Пропуска MIR-TIME
-    aliases: [bp, pass, бп]
+  bp:
+    description: Открыть Боевой Пропуск MIR-TIME
+    aliases: [battlepass, pass, бп]
   mtpass:
-    description: Управление сезонами и выдача ключей Боевого Пропуска
-    permission: mirtime.pass.admin
-permissions:
-  mirtime.pass.admin:
-    description: Смена сезона, выдача ключей и опыта
-    default: op
+    description: Управление Боевым Пропуском MIR-TIME
