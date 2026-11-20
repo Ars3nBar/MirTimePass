@@ -483,7 +483,7 @@ public class MirTimePass extends JavaPlugin implements CommandExecutor, TabCompl
     @Override
     public List<String> onTabComplete(CommandSender s, Command c, String a, String[] args) {
         if (args.length == 1) return List.of("setseason", "givekey", "setpremium", "setlevel", "addxp", "resetquests", "reload");
-        if (args.length == 2 && args.equalsIgnoreCase("setseason")) {
+        if (args.length == 2 && args[0].equalsIgnoreCase("setseason")) {
             ConfigurationSection sSec = getConfig().getConfigurationSection("seasons");
             return sSec != null ? new ArrayList<>(sSec.getKeys(false)) : List.of();
         }
