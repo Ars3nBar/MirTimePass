@@ -1,6 +1,8 @@
 prefix: "&#0055ff&l⚡ &#00E5FF&lMIR-TIME &8» "
 site-link: "don.mir-time.ru"
 token-cost: 10000
+level-price-tokens: 500
+level-price-iks: 2
 active-season: "anarchy"
 xp-per-level: 100
 max-level: 50
@@ -8,6 +10,8 @@ max-level: 50
 seasons:
   anarchy:
     display-name: "&c&l⚔ Кровавая Анархия"
+    corner-glass: "RED_STAINED_GLASS_PANE"
+    border-glass: "ORANGE_STAINED_GLASS_PANE"
     quests:
       q1: {name: "&c&lПалач Арены", desc: "Убейте 5 игроков в PvP", type: "KILL_PLAYER", target: 5, xp: 150}
       q2: {name: "&#00E5FF&lВзломщик Баз", desc: "Добудьте 15 блоков обсидиана", type: "BREAK_OBSIDIAN", target: 15, xp: 120}
@@ -19,103 +23,41 @@ seasons:
         free-cmd: "eco give %player% 20000"
         prem-name: "&#00FF66300 Токенов + 3 Золотых яблока"
         prem-cmds: ["p give %player% 300", "minecraft:give %player% golden_apple 3"]
-      3:
-        free-name: "&fПаутинный Кокон (x1)"
-        free-cmd: "mtitems give %player% web_bomb 1"
-        prem-name: "&#00E5FFТрапка (x2)"
-        prem-cmds: ["mtitems give %player% trapka 2"]
       5:
         free-name: "&#00E5FFТрапка (x1)"
         free-cmd: "mtitems give %player% trapka 1"
         prem-name: "&#00E5FF&l5 Иксов &f+ Дезориентация"
         prem-cmds: ["giks give %player% 5 Iksy", "mtitems give %player% disorient 1"]
-      8:
-        free-name: "&#00FF66Слеза Ангела (x1)"
-        free-cmd: "mtitems give %player% cleanse_totem 1"
-        prem-name: "&#FFD700Перо Феникса (x2)"
-        prem-cmds: ["mtitems give %player% escape_feather 2"]
       10:
         free-name: "&e50.000 Монет"
         free-cmd: "eco give %player% 50000"
         prem-name: "&#00E5FF&l10 Иксов &f+ Око Пустоты (x2)"
         prem-cmds: ["giks give %player% 10 Iksy", "mtitems give %player% flash_pearl 2"]
-      13:
-        free-name: "&#00FF66Коса Урожая 5×5"
-        free-cmd: "mtitems give %player% farmer_hoe 1"
-        prem-name: "&cЯдерный Схлоп (x1)"
-        prem-cmds: ["mtitems give %player% cataclysm 1"]
-      15:
-        free-name: "&#FFD700Сигнальная Шашка (x1)"
-        free-cmd: "mtitems give %player% loot_flare 1"
-        prem-name: "&#00E5FF&l15 Иксов &f+ Эгида Бессмертия"
-        prem-cmds: ["giks give %player% 15 Iksy", "mtitems give %player% divine_aura 1"]
-      18:
-        free-name: "&cКрушитель Обсидиана"
-        free-cmd: "mtitems give %player% obsidian_breaker 1"
-        prem-name: "&#9400d3Пласт-Цитадель (x1)"
-        prem-cmds: ["mtitems give %player% mega_trap 1"]
       20:
         free-name: "&#00E5FF&l8 Иксов"
         free-cmd: "giks give %player% 8 Iksy"
         prem-name: "&#00E5FF&l20 Иксов &f+ Ледяной Скипетр"
         prem-cmds: ["giks give %player% 20 Iksy", "mtitems give %player% frost_staff 1"]
-      23:
-        free-name: "&#FFD700Талисман Магната"
-        free-cmd: "mtitems give %player% talisman_wealth 1"
-        prem-name: "&#00E5FFТалисман Урагана"
-        prem-cmds: ["mtitems give %player% talisman_speed 1"]
-      25:
-        free-name: "&#FFD700Кирка-Магнит"
-        free-cmd: "mtitems give %player% magnet_pickaxe 1"
-        prem-name: "&#00E5FF&l25 Иксов &f+ Гнев Перуна"
-        prem-cmds: ["giks give %player% 25 Iksy", "mtitems give %player% thor_axe 1"]
-      28:
-        free-name: "&3Рог Разрушения (x1)"
-        free-cmd: "mtitems give %player% warden_horn 1"
-        prem-name: "&#9400d3Молот Сингулярности"
-        prem-cmds: ["mtitems give %player% gravity_mace 1"]
       30:
         free-name: "&#00E5FF&l12 Иксов"
         free-cmd: "giks give %player% 12 Iksy"
         prem-name: "&#00E5FF&l30 Иксов &f+ Бур «Крот» 3×3"
         prem-cmds: ["giks give %player% 30 Iksy", "mtitems give %player% drill_pickaxe 1"]
-      33:
-        free-name: "&#00FF66Лук «Фантом»"
-        free-cmd: "mtitems give %player% snipe_bow 1"
-        prem-name: "&cТалисман Берсерка"
-        prem-cmds: ["mtitems give %player% talisman_rage 1"]
-      35:
-        free-name: "&5Жнец Душ"
-        free-cmd: "mtitems give %player% soul_reaper 1"
-        prem-name: "&#00E5FF&l35 Иксов &f+ Клинок Алчности"
-        prem-cmds: ["giks give %player% 35 Iksy", "mtitems give %player% midas_sword 1"]
-      38:
-        free-name: "&#00E5FFСкороходы Гермеса"
-        free-cmd: "mtitems give %player% hermes_boots 1"
-        prem-name: "&#9400d3Кирка Похитителя Спавнеров"
-        prem-cmds: ["mtitems give %player% spawner_silk 1"]
       40:
         free-name: "&#00E5FF&l15 Иксов"
         free-cmd: "giks give %player% 15 Iksy"
         prem-name: "&#00E5FF&l40 Иксов &f+ Тотем Призыва Босса"
         prem-cmds: ["giks give %player% 40 Iksy", "mtitems give %player% totem 1"]
-      43:
-        free-name: "&#FFD700Кираса Джаггернаута"
-        free-cmd: "mtitems give %player% titan_chest 1"
-        prem-name: "&4Клинок Кровавой Луны"
-        prem-cmds: ["mtitems give %player% vampire_blade 1"]
-      46:
-        free-name: "&#9400d3Крылья Пустоты"
-        free-cmd: "mtitems give %player% dragon_elytra 1"
-        prem-name: "&cЯдерный Схлоп (x3) &f+ Пласт-Цитадель (x2)"
-        prem-cmds: ["mtitems give %player% cataclysm 3", "mtitems give %player% mega_trap 2"]
       50:
         free-name: "&#00E5FF&l25 Иксов &f+ Тотем Призыва Босса"
         free-cmd: "giks give %player% 25 Iksy"
         prem-name: "&#FFD700&l75 Иксов &f+ Полный сет артефактов"
         prem-cmds: ["giks give %player% 75 Iksy", "mtitems give %player% vampire_blade 1", "mtitems give %player% titan_chest 1", "mtitems give %player% dragon_elytra 1"]
+
   abyss:
     display-name: "&#9400d3&l👁 Зов Бездны"
+    corner-glass: "PURPLE_STAINED_GLASS_PANE"
+    border-glass: "MAGENTA_STAINED_GLASS_PANE"
     quests:
       q1: {name: "&#9400d3&lОхотник Бездны", desc: "Убейте 8 игроков в PvP", type: "KILL_PLAYER", target: 8, xp: 160}
       q2: {name: "&#00E5FF&lШахтёр Бездны", desc: "Добудьте 25 блоков обсидиана", type: "BREAK_OBSIDIAN", target: 25, xp: 130}
@@ -127,39 +69,26 @@ seasons:
         free-cmd: "p give %player% 200"
         prem-name: "&e30.000 Монет + 2 Эндер-жемчуга"
         prem-cmds: ["eco give %player% 30000", "minecraft:give %player% ender_pearl 2"]
-      5:
-        free-name: "&#00E5FFОко Пустоты (x1)"
-        free-cmd: "mtitems give %player% flash_pearl 1"
-        prem-name: "&#00E5FF&l8 Иксов &f+ Ледяной Скипетр"
-        prem-cmds: ["giks give %player% 8 Iksy", "mtitems give %player% frost_staff 1"]
       10:
         free-name: "&#00E5FF&l5 Иксов"
         free-cmd: "giks give %player% 5 Iksy"
-        prem-name: "&#00E5FF&l15 Иксов &f+ Пласт-Цитадель (x2)"
-        prem-cmds: ["giks give %player% 15 Iksy", "mtitems give %player% mega_trap 2"]
-      20:
+        prem-name: "&#00E5FF&l15 Иксов &f+ Чёрная Дыра"
+        prem-cmds: ["giks give %player% 15 Iksy", "mtitems give %player% black_hole 1"]
+      25:
         free-name: "&#9400d3Молот Сингулярности"
         free-cmd: "mtitems give %player% gravity_mace 1"
-        prem-name: "&#00E5FF&l25 Иксов &f+ Жнец Душ"
-        prem-cmds: ["giks give %player% 25 Iksy", "mtitems give %player% soul_reaper 1"]
-      30:
-        free-name: "&#00E5FF&l15 Иксов"
-        free-cmd: "giks give %player% 15 Iksy"
-        prem-name: "&#00E5FF&l35 Иксов &f+ Кирка Похитителя Спавнеров"
-        prem-cmds: ["giks give %player% 35 Iksy", "mtitems give %player% spawner_silk 1"]
-      40:
-        free-name: "&#9400d3Крылья Пустоты"
-        free-cmd: "mtitems give %player% dragon_elytra 1"
-        prem-name: "&#00E5FF&l45 Иксов &f+ Тотем Призыва Босса (x2)"
-        prem-cmds: ["giks give %player% 45 Iksy", "mtitems give %player% totem 2"]
+        prem-name: "&#00E5FF&l30 Иксов &f+ Жнец Душ"
+        prem-cmds: ["giks give %player% 30 Iksy", "mtitems give %player% soul_reaper 1"]
       50:
         free-name: "&#00E5FF&l30 Иксов"
         free-cmd: "giks give %player% 30 Iksy"
-        prem-name: "&#FFD700&l90 Иксов &f+ Гнев Перуна &f+ Скороходы Гермеса"
-        prem-cmds: ["giks give %player% 90 Iksy", "mtitems give %player% thor_axe 1", "mtitems give %player% hermes_boots 1"]
+        prem-name: "&#FFD700&l90 Иксов &f+ Гнев Перуна &f+ Перо Феникса"
+        prem-cmds: ["giks give %player% 90 Iksy", "mtitems give %player% thor_axe 1", "mtitems give %player% phoenix_totem 1"]
 
   cyber:
     display-name: "&#00E5FF&l⚡ Неоновый Рейд"
+    corner-glass: "BLUE_STAINED_GLASS_PANE"
+    border-glass: "LIGHT_BLUE_STAINED_GLASS_PANE"
     quests:
       q1: {name: "&#00E5FF&lКибер-Гладиатор", desc: "Убейте 4 игроков в PvP", type: "KILL_PLAYER", target: 4, xp: 140}
       q2: {name: "&b&lОбсидиановый Шторм", desc: "Добудьте 10 блоков обсидиана", type: "BREAK_OBSIDIAN", target: 10, xp: 110}
@@ -171,23 +100,90 @@ seasons:
         free-cmd: "eco give %player% 25000"
         prem-name: "&#00E5FF&l1 Икс + 250 Токенов"
         prem-cmds: ["giks give %player% 1 Iksy", "p give %player% 250"]
-      10:
-        free-name: "&#00E5FFТрапка (x2)"
-        free-cmd: "mtitems give %player% trapka 2"
-        prem-name: "&#00E5FF&l12 Иксов &f+ Бур «Крот» 3×3"
-        prem-cmds: ["giks give %player% 12 Iksy", "mtitems give %player% drill_pickaxe 1"]
       25:
         free-name: "&#FFD700Сигнальная Шашка (x2)"
         free-cmd: "mtitems give %player% loot_flare 2"
-        prem-name: "&#00E5FF&l30 Иксов &f+ Эгида Бессмертия (x2)"
-        prem-cmds: ["giks give %player% 30 Iksy", "mtitems give %player% divine_aura 2"]
-      40:
-        free-name: "&#00E5FF&l20 Иксов"
-        free-cmd: "giks give %player% 20 Iksy"
-        prem-name: "&#00E5FF&l50 Иксов &f+ Ядерный Схлоп (x3)"
-        prem-cmds: ["giks give %player% 50 Iksy", "mtitems give %player% cataclysm 3"]
+        prem-name: "&#00E5FF&l30 Иксов &f+ Эгида Титана"
+        prem-cmds: ["giks give %player% 30 Iksy", "mtitems give %player% bedrock_shield 1"]
       50:
         free-name: "&#00E5FF&l30 Иксов"
         free-cmd: "giks give %player% 30 Iksy"
-        prem-name: "&#FFD700&l80 Иксов &f+ Талисман Берсерка &f+ Кираса Джаггернаута"
-        prem-cmds: ["giks give %player% 80 Iksy", "mtitems give %player% talisman_rage 1", "mtitems give %player% titan_chest 1"]
+        prem-name: "&#FFD700&l80 Иксов &f+ Посох Метеорита &f+ Нагрудник Титана"
+        prem-cmds: ["giks give %player% 80 Iksy", "mtitems give %player% meteor_staff 1", "mtitems give %player% titan_chest 1"]
+  inferno:
+    display-name: "&#FF5500&l🔥 Пепел Преисподней"
+    corner-glass: "ORANGE_STAINED_GLASS_PANE"
+    border-glass: "RED_STAINED_GLASS_PANE"
+    quests:
+      q1: {name: "&#FF5500&lДемон Арены", desc: "Убейте 6 игроков в PvP", type: "KILL_PLAYER", target: 6, xp: 150}
+      q2: {name: "&c&lАдский Шахтёр", desc: "Добудьте 20 блоков обсидиана", type: "BREAK_OBSIDIAN", target: 20, xp: 130}
+      q3: {name: "&#FF8800&lОгненная Охота", desc: "Убейте 35 мобов", type: "KILL_MOB", target: 35, xp: 110}
+      q4: {name: "&e&lОгненное Сердце", desc: "Съешьте 12 золотых яблок", type: "EAT_GAPPLE", target: 12, xp: 120}
+    rewards:
+      default:
+        free-name: "&e30.000 Монет"
+        free-cmd: "eco give %player% 30000"
+        prem-name: "&#00E5FF&l2 Икса + 300 Токенов"
+        prem-cmds: ["giks give %player% 2 Iksy", "p give %player% 300"]
+      25:
+        free-name: "&#FF5500Огненная Клетка (x2)"
+        free-cmd: "mtitems give %player% lava_prison 2"
+        prem-name: "&#00E5FF&l35 Иксов &f+ Посох Метеорита"
+        prem-cmds: ["giks give %player% 35 Iksy", "mtitems give %player% meteor_staff 1"]
+      50:
+        free-name: "&#00E5FF&l35 Иксов"
+        free-cmd: "giks give %player% 35 Iksy"
+        prem-name: "&#FFD700&l95 Иксов &f+ Булава «ДЖЕКА» XV"
+        prem-cmds: ["giks give %player% 95 Iksy", "mtitems give %player% jack_mace 1"]
+
+  bloodmoon:
+    display-name: "&4&l🩸 Кровавая Луна"
+    corner-glass: "BLACK_STAINED_GLASS_PANE"
+    border-glass: "RED_STAINED_GLASS_PANE"
+    quests:
+      q1: {name: "&4&lНочной Вампир", desc: "Убейте 7 игроков в PvP", type: "KILL_PLAYER", target: 7, xp: 160}
+      q2: {name: "&c&lРазрушитель Цитаделей", desc: "Добудьте 18 блоков обсидиана", type: "BREAK_OBSIDIAN", target: 18, xp: 120}
+      q3: {name: "&5&lЖнец Теней", desc: "Убейте 40 мобов", type: "KILL_MOB", target: 40, xp: 110}
+      q4: {name: "&6&lКровь Титанов", desc: "Съешьте 12 золотых яблок", type: "EAT_GAPPLE", target: 12, xp: 120}
+    rewards:
+      default:
+        free-name: "&#00FF66250 Токенов"
+        free-cmd: "p give %player% 250"
+        prem-name: "&#00E5FF&l2 Икса + 35.000 Монет"
+        prem-cmds: ["giks give %player% 2 Iksy", "eco give %player% 35000"]
+      25:
+        free-name: "&8Плащ Тени (x2)"
+        free-cmd: "mtitems give %player% shadow_cloak 2"
+        prem-name: "&#00E5FF&l35 Иксов &f+ Клинок Вампира"
+        prem-cmds: ["giks give %player% 35 Iksy", "mtitems give %player% vampire_blade 1"]
+      50:
+        free-name: "&#00E5FF&l35 Иксов"
+        free-cmd: "giks give %player% 35 Iksy"
+        prem-name: "&#FFD700&l100 Иксов &f+ Скипетр «КОРОЛЯ» X &f+ Перо Феникса"
+        prem-cmds: ["giks give %player% 100 Iksy", "mtitems give %player% king_scepter 1", "mtitems give %player% phoenix_totem 1"]
+
+  olympus:
+    display-name: "&#FFD700&l👑 Гнев Олимпа"
+    corner-glass: "YELLOW_STAINED_GLASS_PANE"
+    border-glass: "WHITE_STAINED_GLASS_PANE"
+    quests:
+      q1: {name: "&#FFD700&lЧемпион Олимпа", desc: "Убейте 8 игроков в PvP", type: "KILL_PLAYER", target: 8, xp: 170}
+      q2: {name: "&e&lПокоритель Тверди", desc: "Добудьте 25 блоков обсидиана", type: "BREAK_OBSIDIAN", target: 25, xp: 140}
+      q3: {name: "&#00FF66&lКара Небес", desc: "Убейте 45 мобов", type: "KILL_MOB", target: 45, xp: 120}
+      q4: {name: "&6&lАмброзия", desc: "Съешьте 15 золотых яблок", type: "EAT_GAPPLE", target: 15, xp: 130}
+    rewards:
+      default:
+        free-name: "&e35.000 Монет"
+        free-cmd: "eco give %player% 35000"
+        prem-name: "&#00E5FF&l3 Икса + 400 Токенов"
+        prem-cmds: ["giks give %player% 3 Iksy", "p give %player% 400"]
+      25:
+        free-name: "&#00E5FFТрезубец Посейдона"
+        free-cmd: "mtitems give %player% lightning_trident 1"
+        prem-name: "&#00E5FF&l40 Иксов &f+ Рука Мидаса (x2)"
+        prem-cmds: ["giks give %player% 40 Iksy", "mtitems give %player% midas_touch 2"]
+      50:
+        free-name: "&#00E5FF&l40 Иксов"
+        free-cmd: "giks give %player% 40 Iksy"
+        prem-name: "&#FFD700&l120 Иксов &f+ Меч «БОГА» XV &f+ Шлем «БОГА» З15"
+        prem-cmds: ["giks give %player% 120 Iksy", "mtitems give %player% god_sword 1", "mtitems give %player% god_helmet 1"]
