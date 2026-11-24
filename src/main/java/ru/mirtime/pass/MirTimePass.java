@@ -132,7 +132,8 @@ public class MirTimePass extends JavaPlugin implements CommandExecutor, TabCompl
         int maxPages = (int) Math.ceil(maxLvl / 7.0);
         int safePage = Math.max(1, Math.min(maxPages, page));
 
-        Inventory inv = Bukkit.createInventory(null, 54, color(sName + " &8| &fСтр. " + safePage + "/" + maxPages));
+        PassHolder holder = new PassHolder(safePage);
+        Inventory inv = Bukkit.createInventory(holder, 54, color(sName + " &8| &fСтр. " + safePage + "/" + maxPages));
 
         ItemStack corner = makeItem(cMat, "&#0055ff&l▪", null);
         ItemStack border = makeItem(bMat, "&#00E5FF▫", null);
