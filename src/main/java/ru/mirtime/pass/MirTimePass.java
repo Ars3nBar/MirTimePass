@@ -33,6 +33,12 @@ public class MirTimePass extends JavaPlugin implements CommandExecutor, TabCompl
     private File dataFile;
     private YamlConfiguration data;
     private int questOffset = 0;
+    public static class PassHolder implements org.bukkit.inventory.InventoryHolder {
+    public final int page;
+    public PassHolder(int page) { this.page = page; }
+    @Override public Inventory getInventory() { return null; }
+}
+
 
     @Override
     public void onEnable() {
@@ -271,14 +277,13 @@ public class MirTimePass extends JavaPlugin implements CommandExecutor, TabCompl
     @EventHandler
     public void onMenuClick(InventoryClickEvent e) {
         if (!(e.getWhoClicked() instanceof Player p)) return;
-        String title = e.getView().getTitle();
-        if (!title.contains("Стр. ")) return;
+        if (!(e.getView().getTopInventory().getHolder() instanceof PassHolder holder)) return;
         e.setCancelled(true);
 
         int maxLvl = getMaxLevel();
         int maxPages = (int) Math.ceil(maxLvl / 7.0);
-        int page = 1;
-        try { page = Integer.parseInt(title.substring(title.indexOf("Стр. ") + 5).split("/")[0].trim()); } catch (Exception ignored) {}
+        int page = holder.page;
+
 
         UUID id = p.getUniqueId();
         String prefix = color(getConfig().getString("prefix"));
